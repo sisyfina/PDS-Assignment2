@@ -1,0 +1,9 @@
+FOR THE MAIN EXECUTABLE:
+
+./main [first file] [second file] [k]
+
+FOR THE DISTRMAIN EXECUTABLE
+
+mpirun distrmain -np 2(or 4 or 8)
+
+but there is a problem with MPI_Gatherv() in the V1 implementation and the program although is compiles, as long as the execution of the program reaches that point it doesn't respond, so I would recommend not running it. Although, I recommend it based on the fact that my pc cannot afford to use more than np -2 as an argument due to its specs.
